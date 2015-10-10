@@ -6,7 +6,7 @@ var querystring = require("querystring");
 http.createServer(function (req, res) {
     // 设置接收数据编码格式为 UTF-8
     req.setEncoding('utf-8');
-    var postData = ""; 
+    var postData = ""; //POST & GET ： name=zzl&email=zzl@sina.com
     // 数据块接收中
     req.addListener("data", function (postDataChunk) {
         postData += postDataChunk;
@@ -14,8 +14,8 @@ http.createServer(function (req, res) {
     // 数据接收完毕，执行回调函数
     req.addListener("end", function () {
         console.log('数据接收完毕');
-        //var params = querystring.parse(postData);
-        var params = JSON.parse(postData);
+        //var params = querystring.parse(postData);//GET & POST  ////解释表单数据部分{name="zzl",email="zzl@sina.com"}
+        var params = JSON.parse(postData);//GET & POST  ////解释表单数据部分{name="zzl",email="zzl@sina.com"}
         console.log(params);
         console.log(params["usrname"]);
         console.log(params["usrid"]);
