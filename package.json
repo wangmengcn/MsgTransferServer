@@ -3,11 +3,7 @@
     "version": "1.0.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/AnalyticalGraphicsInc/cesium.git"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/luin/ioredis.git"
+        "url": "https://github.com/wangmengcn/MsgTransferServer.git"
     },
     "keywords": [
         "redis",
