@@ -1,0 +1,20 @@
+{
+    "name": "MsgTransfer",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AnalyticalGraphicsInc/cesium.git"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/luin/ioredis.git"
+    },
+    "keywords": [
+        "redis",
+        "Message Queue "
+    ],
+    "author": "wangmengcn (http://eclipsesv.com)",
+    "devDependencies": {
+        "ioredis": "1.9.1"
+    }
+}
