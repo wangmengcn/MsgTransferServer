@@ -6,7 +6,7 @@ var querystring = require("querystring");
 http.createServer(function (req, res) {
     // 设置接收数据编码格式为 UTF-8
     req.setEncoding('utf-8');
-    var postData = ""; //POST & GET ： name=zzl&email=zzl@sina.com
+    var postData = ""; 
     // 数据块接收中
     req.addListener("data", function (postDataChunk) {
         postData += postDataChunk;
