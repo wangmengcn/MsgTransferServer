@@ -14,8 +14,7 @@ http.createServer(function (req, res) {
     // 数据接收完毕，执行回调函数
     req.addListener("end", function () {
         console.log('数据接收完毕');
-        //var params = querystring.parse(postData);//GET & POST  ////解释表单数据部分{name="zzl",email="zzl@sina.com"}
-        var params = JSON.parse(postData);//GET & POST  ////解释表单数据部分{name="zzl",email="zzl@sina.com"}
+        var params = JSON.parse(postData);
         console.log(params);
         console.log(params["usrname"]);
         console.log(params["usrid"]);
